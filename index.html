@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>
+  <title>My First HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 style="font-size: 1rem;">André Santos</h1>
+    <p style="font-size: 0.8rem;">alwsantos47@gmail.com</p>
+  </header>
+
+  <h1>Welcome to my online portfolio, where you can explore my work and learn more about me, André Santos.</h1>
+
+  <!-- About Me Section -->
+  <div class="container">
+    <div class="intro">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p class="half-width">I specialize in plant biotechnology (Dr. rer. nat. in Natural Sciences, University of
+            Münster, Germany) with a primary focus on the conservation of plant genetic resources. My current research
+          delves into the influence of computational tools on genetic resource conservation. The overarching goal is to
+          develop integrated tools harnessing the power of big data to optimize the management of plant genetic
+          resources.</p>
+        <img src="dog.png" alt="Sua Foto" class="profile-picture">
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Nitroso47" target="_blank"><img src="git.png" alt="GitHub Logo"></a>
+        <a href="https://www.linkedin.com/in/andre-santos48/" target="_blank"><img src="link1.png"
+            alt="LinkedIn Logo"></a>
+        <a href="http://lattes.cnpq.br/8367079704272394" target="_blank"><img src="lattes.png" alt="Curriculum Logo"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">
+      <img src="R.png" alt="R">
+      <p>R</p>
+    </div>
+    <div class="skill">
+      <img src="java.png" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill">
+      <img src="cyber.png" alt="Cybersecurity">
+      <p>Cybersecurity</p>
+    </div>
+    <div class="skill">
+      <img src="HTML.png" alt="HTML5">
+      <p>HTML5</p>
+    </div>
+    <div class="skill">
+      <img src="CSS.png" alt="CSS">
+      <p>CSS</p>
+    </div>
+  </div>
+
+  <!-- Academic Background Section -->
+  <h2>Academic Background</h2>
+  <div class="education">
+    <div class="institution">
+      <img src="UNC1.png" alt="UNC-Graduação em Engenharia Florestal (1993-1997)">
+      <div class="text">
+        <p>UNC- B.S. Forestry Engineering (1993-1997)</p>
+      </div>
+    </div>
+    <div class="institution">
+      <img src="UFSC1.png" alt="UFSC logo">
+      <div class="text">
+        <p>Federal University of Santa Catarina- M.S. Plant Genetic Resources (1998-200)</p>
+      </div>
+    </div>
+    <div class="institution">
+      <img src="wwu-logo.png" alt="WWU logo">
+      <div class="text">
+        <p>University of Münster- Dr. rer. nat. in Natural Sciences (2000-2005)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Experience Section -->
+  <h2>Professional Experience</h2>
+  <div class="professional-experience">
+    <div class="experience">
+      <img src="cyber.png" alt="Cybersecurity">
+      <div class="text">
+        <p><a href="https://github.com/Nitroso47/cibersecurity-desafio-ransomware" target="_blank">Ransomware challenge</a></p>
+      </div>
+    </div>
+    <div class="experience">
+      <img src="cyber.png" alt="Cybersecurity">
+      <div class="text">
+        <p><a href="https://github.com/Nitroso47/cibersecurity-desafio-phishing" target="_blank">Phishing challenge</a></p>
+      </div>
+    </div>
+    </div>
+   
+
+  <!-- Hobbies Section -->
+  <h2>Hobbies</h2>
+  <div class="Hobbies">
+    <div class="hobby">
+      <img src="reading.png" alt="reading">
+      <div class="text">
+        <p>reading</p>
+      </div>
+    </div>
+    <div class="hobby">
+      <img src="gym.png" alt="gym">
+      <div class="text">
+        <p>gym</p>
+      </div>
+    </div>
+    <div class="hobby">
+      <img src="cook.png" alt="cook">
+      <div class="text">
+        <p>cooking</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <h2>Contact Form</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div id="response"></div>
+
+  <script>
+    // JavaScript 
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      emailjs.send('service_abcdefgh', 'template_123456', {
+          'from_name': name,
+          'from_email': email,
+          'message': message
+        })
+        .then(function(response) {
+          document.getElementById('response').innerHTML = 'Your message has been sent!';
+        }, function(error) {
+          document.getElementById('response').innerHTML = 'There was a problem sending your message.';
+        });
+    });
+  </script>
+
+ <!-- Footer Section -->
+ <footer>
+  <p>Developed by Andre Santos</p>
+</footer>
+
+</body>
+
+</html>

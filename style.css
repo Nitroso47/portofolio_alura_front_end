@@ -1,0 +1,359 @@
+/* Estilos para o header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #333;
+}
+
+.header h1 {
+  margin: 0;
+
+}
+
+.header p {
+  margin: 0;
+  font-size: 1rem;
+  color: withe;
+}
+
+
+/* Estilos para o corpo da página */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  /* Cor de fundo suave */
+  color: #333;
+  /* Cor do texto principal */
+  line-height: 1.6;
+  /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+/* Estilos para os cabeçalhos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 24px;
+  color: #2a67a4;
+  text-align: center;
+  /* Centralize o texto */
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  /* Centraliza o conteúdo na página */
+  padding: 20px;
+  /* Adiciona espaço interno ao redor do conteúdo */
+  overflow: hidden;
+}
+
+.half-width {
+  width: 45%;
+  text-align: left;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+
+/* Estilos para a seção de habilidades */
+
+.skills {
+  margin-top: 30px;
+  display: flex;
+  /* Disponha os itens horizontalmente */
+  flex-wrap: wrap;
+  /* Permita que os itens quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.skill {
+  display: flex;
+  /* Disponha os itens horizontalmente */
+  flex-direction: column;
+  /* Alinhe os itens em coluna */
+  align-items: center;
+  /* Alinhe os itens verticalmente */
+  margin-left: 45px;
+  margin-right: 20px;
+  /* Adicione uma margem entre os logos */
+  margin-bottom: 20px;
+  /* Adicione uma margem abaixo de cada skill */
+}
+
+.skill img {
+  width: 10%;
+  height: auto;
+}
+
+.skill p {
+  margin-top: 5px;
+  /* Adicione uma pequena margem acima do texto */
+  text-align: center;
+  /* Centralize o texto */
+}
+
+
+
+
+.institution {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.institution img {
+  width: 10%;
+  height: auto;
+}
+
+.text {
+  margin-left: 10px;
+  /* Adicione um espaçamento à esquerda */
+}
+
+.text p {
+  margin: 0;
+}
+
+.professional-experience {
+  margin-top: 30px;
+  display: flex;
+  /* Disponha os itens horizontalmente */
+  flex-wrap: wrap;
+  /* Permita que os itens quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.experience {
+  display: flex;
+  /* Disponha os itens horizontalmente */
+  flex-direction: column;
+  /* Alinhe os itens em coluna */
+  align-items: center;
+  /* Alinhe os itens verticalmente */
+  margin-left: 45px;
+  margin-right: 20px;
+  /* Adicione uma margem entre os logos */
+  margin-bottom: 20px;
+  /* Adicione uma margem abaixo de cada skill */
+}
+
+.experience img {
+  width: 20%;
+  height: auto;
+}
+
+/* Seção de hobbies*/
+
+.Hobbies {
+  margin-top: 30px;
+  display: flex;
+  /* Disponha os itens horizontalmente */
+  flex-wrap: wrap;
+  /* Permita que os itens quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.hobby {
+  display: flex;
+  /* Disponha os itens horizontalmente */
+  flex-direction: column;
+  /* Alinhe os itens em coluna */
+  align-items: center;
+  /* Alinhe os itens verticalmente */
+  margin-left: 45px;
+  margin-right: 20px;
+  /* Adicione uma margem entre os logos */
+  margin-bottom: 20px;
+  /* Adicione uma margem abaixo de cada skill */
+}
+
+.hobby img {
+  width: 20%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  /* Em vez de 500px */
+  height: 150px;
+  /* Ajusta automaticamente a altura conforme a largura */
+  float: right; margin: 20px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.social-links {
+  display: flex;
+
+  /* Torna os logos alinhados lado a lado */
+}
+
+.social-links a {
+  font-size: 18px;
+  /* Define o tamanho da fonte para os links */
+  padding: 5px 10px;
+  /* Adiciona preenchimento interno aos links */
+  margin-right: 1px;
+  /* Adiciona uma margem entre os logos */
+}
+
+/* Ajustando o espaçamento vertical entre os logos */
+.social-links img {
+  width: 30px;
+  /* Ajusta o tamanho dos ícones */
+  height: auto;
+  margin-right: 10px;
+  /* Adiciona espaço entre os ícones */
+  transition: transform 0.3s ease;
+  /* Adiciona uma transição suave */
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+  /* Aumenta ligeiramente o tamanho do ícone ao passar o mouse sobre ele */
+}
+
+.intro {
+  overflow: hidden;
+  /* Limpa o float para garantir que o container envolva a imagem */
+  margin-bottom: 30px;
+  /* Adiciona espaço entre a seção de introdução e a próxima seção */
+}
+
+.about-content {
+  display: flex;
+  /* Alinha o texto e a imagem lado a lado */
+}
+
+.about-content p {
+  flex: 1;
+  /* Permite que o texto ocupe o espaço restante */
+}
+
+.profile-picture {
+  border-radius: 50%;
+  /* Transforma a imagem em um círculo */
+  width: 170px;
+  /* Ajusta o tamanho da imagem */
+  height: 170px;
+  margin-right: 20px;
+  /* Adiciona espaço entre a imagem e o texto */
+}
+
+/* Adicionando uma regra para tornar o texto responsivo */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+    /* Reduz o tamanho da fonte para telas menores */
+  }
+}
+
+/* Ajustando a largura da div .container para se adaptar ao tamanho da tela */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    /* Reduz a largura da div container para telas menores */
+  }
+}
+
+/* Ajustando a largura da div .half-width para ocupar toda a largura da tela em telas menores */
+@media screen and (max-width: 768px) {
+  .half-width {
+    width: 100%;
+    /* Define a largura da div half-width para 100% em telas menores */
+  }
+}
+
+/* Ajustando a exibição dos links para empilhá-los verticalmente em telas menores */
+@media screen and (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    /* Altera a direção do flex para empilhar os links verticalmente */
+    align-items: center;
+    /* Centraliza os links na tela */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill,
+  .institution {
+    margin-left: 5%; /* Reduza a margem para telas menores */
+    margin-right: 5%; /* Reduza a margem para telas menores */
+  }
+}
+
+
+/* Ajustando as margens para telas menores */
+@media screen and (max-width: 768px) {
+
+  .description,
+  .skills,
+  .hobbies,
+  .education,
+  .professional-experience {
+    margin-top: 20px;
+    /* Reduz a margem superior para telas menores */
+  }
+}
+
+/* Ajustando o tamanho das imagens para telas menores */
+@media screen and (max-width: 768px) {
+
+  .skill img,
+  .institution img {
+    width: 40px;
+    /* Reduz o tamanho das imagens para telas menores */
+    height: 40px;
+    /* Reduz o tamanho das imagens para telas menores */
+  }
+}
+
+/* Ajustando as margens inferiores dos títulos para telas menores */
+@media screen and (max-width: 768px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 5px;
+    /* Reduz a margem inferior dos títulos para telas menores */
+  }
+}
+
+
+/* Estilos para o footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
